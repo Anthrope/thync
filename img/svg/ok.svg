@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns:ev="http://www.w3.org/2001/xml-events"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-296.1 390.1 18.2 13.1"
+	 enable-background="new -296.1 390.1 18.2 13.1" xml:space="preserve">
+<filter  id="Filter_0">
+	<feFlood  result="floodOut" flood-opacity="1" flood-color="rgb( 102, 102, 102 )"></feFlood>
+	<feComposite  operator="atop" in="floodOut" result="compOut" in2="SourceGraphic"></feComposite>
+	<feBlend  in="compOut" in2="SourceGraphic" mode="normal"></feBlend>
+</filter>
+<g filter="url(#Filter_0)">
+	<path fill="none" stroke="#000000" stroke-width="3" d="M-279,391.1l-9.7,9.9l-6.3-6.4"/>
+</g>
+<g>
+	<polygon points="-288.7,403.1 -296.1,395.7 -293.9,393.6 -288.7,398.9 -280.1,390.1 -277.9,392.2 	"/>
+</g>
+</svg>

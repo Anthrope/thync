@@ -1,63 +1,112 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book", Arial, sans-serif 
-// insert pics into css
-// div
-// 	+pic("blabla.png")
-// span
-// 	+png(blabla)
-// p
-// 	+jpg(bla)
+// fonts
+// MarkOffcPro font-family:
++font(MarkOffcPro, MarkOffcPro)  
+=offs
+	font-family: "MarkOffcPro"
++font(MarkOffcProBook, MarkOffcProBook)  
+=offs-book
+	font-family: "MarkOffcProBook"
++font(MarkOffcProBold, MarkOffcProBold)  
+=offs-b
+	font-family: "MarkOffcProBold"
++font(MarkOffcProMedium, MarkOffcProMedium)  
+=offs-m
+	font-family: "MarkOffcProMedium"	
++font(MarkOffcProLight, MarkOffcProLight)  
+=offs-l
+	font-family: "MarkOffcProLight"
+
+// MarkCompPro font-family:
++font(MarkCompPro-Light, MarkCompPro-Light)  
+=comp-l
+	font-family: "MarkCompPro-Light"
++font(MarkCompPro-ExtraLight, MarkCompPro-ExtraLight)  
+=comp-el
+	font-family: "MarkCompPro-ExtraLight"
 
 
+// common styles:
 body
-	font-family: Arial, sans-serif 
+	+offs
 	font-size: 12px 
-	line-height: 1.4
+	line-height: 1.2
+// titles
+.h1
+	+comp-el
+	font-size: 60px
+	color: #666
+	font-weight: normal
+	+r(600)
+		font-size: 48px
+	+r(480)
+		font-size: 32px 		
 
-
-// common blocks      
-
-
-
+// common blocks
+.out
+	+comp-l
+.clr
+	+clr     
+.center
+	max-width: 1366px
+	margin: 0 auto
+	
+// form
+.form
+	margin-bottom: 20px
+	padding: 31px 
+	background: #fff
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17)
+	.form__row
+		margin-top: 15px
+		&:first-child
+			margin-top: 0 
+.input
+	width: 100%
+	height: 50px
+	background: #f6f5f8
+	text-align: center
+	+offs-b
+	font-size: 16px
+	color: #666
+	+placeholder
+		+offs-b
+		font-size: 16px
+		color: #666
+	&:focus
+		+placeholder
+			font-size: 0	
+.btn
+	height: 50px
+	width: 100%
+	background: #4e3bbc
+	text-align: center
+	font-size: 20px
+	color: #fff
+	+offs-b
+	+tr(background 300ms)
+	&:hover
+		background: darken(#4e3bbc, 5%) 
+	&.btn_red
+		background: #f55600
+		&:hover
+			background: darken(#f55600, 5%)	
+	&.btn_blue
+		background: #4760a5
+		&:hover
+			background: darken(#4760a5, 5%)	 	
+	&.btn_lightblue
+		background: #50aaf0
+		&:hover
+			background: darken(#50aaf0, 5%)
+	.icon-right
+		font-size: 13px
+		margin-left: 10px
+	.icon-mail, .icon-fb, .icon-tw
+		font-size: 28px
+		margin-right: 10px  	
+	.icon-link
+		font-size: 14px
+		margin-right: 10px			
 
 
 

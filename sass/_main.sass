@@ -1,1 +1,79 @@
 // Normally mainpage styles
+.footer
+	background: #fff 
+	.footer__in
+		padding: 40px 0 80px 
+		text-align: center
+		a
+			+offs-b
+			font-size: 14px
+			color: #666
+			+tr(color 200ms)
+			&:hover
+				color: darken(#666, 10%)
+
+// promo
+.promo
+	position: relative
+	padding: 80px 30px 50px
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background: #efefef url(../img/img1.png) 0 100% no-repeat
+		z-index: -1
+	+r(1100)
+		padding: 30px 5px 
+		&:before
+			opacity: 0.1 	
+	.promo__right
+		float: right
+		width: 50%
+		margin-bottom: 150px
+		text-align: center
+		.h1
+			margin-bottom: 15px
+		+r(1100)
+			float: none
+			width: 100%
+			margin-bottom: 30px  
+	.promo__in
+		max-width: 340px
+		margin: 0 auto 	
+	.promo__text
+		font-size: 24px
+		+comp-l
+		color: #666
+		max-width: 490px
+		margin: 0 auto 30px
+		+r(600)
+			font-size: 20px
+		+r(480)
+			font-size: 18px	
+	.promo__user
+		height: 70px 
+		line-height: 70px
+		margin-bottom: 20px
+		text-align: center
+		+offs-b
+		font-size: 14px
+		color: #666	
+		background: #f9f9f9  
+  					
+.share
+	padding: 31px 
+	background: #fff
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17) 
+	&.disabled
+		background: transparent 
+		border: 1px solid #e1e1e1
+		pointer-events: none
+		box-shadow: none
+		.btn
+			background: #e8e8e8
+			opacity: 0.6 
+	.btn
+		margin-bottom: 15px		
