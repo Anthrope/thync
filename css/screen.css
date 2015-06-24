@@ -40,12 +40,16 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 @media only screen and (max-width: 600px) { .h1 { font-size: 48px; } }
 @media only screen and (max-width: 480px) { .h1 { font-size: 32px; } }
 
-.out { font-family: "MarkCompPro-Light"; }
+.h3 { margin-bottom: 20px; font-family: "MarkOffcProLight"; text-transform: uppercase; font-size: 28px; font-weight: normal; color: #212121; }
+@media only screen and (max-width: 600px) { .h3 { font-size: 26px; } }
 
 .clr { *zoom: 1; }
 .clr:after { content: " "; display: table; clear: both; }
 
 .center { max-width: 1366px; margin: 0 auto; }
+
+.container { max-width: 1066px; margin: 0 auto; }
+@media only screen and (max-width: 1066px) { .container { padding: 0 5px; } }
 
 .form { margin-bottom: 20px; padding: 31px; background: #fff; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17); }
 .form .form__row { margin-top: 15px; }
@@ -75,6 +79,9 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 .btn .icon-mail, .btn .icon-fb, .btn .icon-tw { font-size: 28px; margin-right: 10px; }
 .btn .icon-link { font-size: 14px; margin-right: 10px; }
 
+.button { height: 40px; width: 100%; line-height: 40px; text-align: center; background: #d8d8d8; font-family: "MarkOffcProBold"; font-size: 16px; color: #666; -moz-transition: background 300ms; -o-transition: background 300ms; -webkit-transition: background 300ms; transition: background 300ms; }
+.button:hover { background: #cbcbcb; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
@@ -89,6 +96,17 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 .promo:before { content: ""; position: absolute; top: 0; bottom: 0; right: 0; left: 0; background: #efefef url(../img/img1.png) 0 100% no-repeat; z-index: -1; }
 @media only screen and (max-width: 1100px) { .promo { padding: 30px 5px; }
   .promo:before { opacity: 0.1; } }
+.promo.promo_dashboard { min-height: 300px; }
+.promo.promo_dashboard:before { background: #76a9be url(../img/img2.png) 5% 35% no-repeat; }
+.promo.promo_dashboard .promo__right { margin-bottom: 0; }
+.promo.promo_dashboard .promo__right .h1, .promo.promo_dashboard .promo__right .promo__text { color: #fff; }
+@media only screen and (max-width: 1100px) { .promo.promo_dashboard { padding: 300px 0 0; }
+  .promo.promo_dashboard:before { opacity: 1; background: #76a9be url(../img/img2.png) 52% 35% no-repeat; }
+  .promo.promo_dashboard .promo__right { padding: 20px 0; background: #FFF; }
+  .promo.promo_dashboard .promo__right .h1, .promo.promo_dashboard .promo__right .promo__text { color: #666; }
+  .promo.promo_dashboard .promo__right .promo__text { margin-bottom: 0; } }
+@media only screen and (max-width: 480px) { .promo.promo_dashboard { min-height: 1px; padding: 140px 0 0; }
+  .promo.promo_dashboard:before { background: #76a9be url(../img/img2.png) 50% -70px no-repeat; -webkit-background-size: 80% auto; -o-background-size: 80% auto; background-size: 80% auto; } }
 .promo .promo__right { float: right; width: 50%; margin-bottom: 150px; text-align: center; }
 .promo .promo__right .h1 { margin-bottom: 15px; }
 @media only screen and (max-width: 1100px) { .promo .promo__right { float: none; width: 100%; margin-bottom: 30px; } }
@@ -98,7 +116,46 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 @media only screen and (max-width: 480px) { .promo .promo__text { font-size: 18px; } }
 .promo .promo__user { height: 70px; line-height: 70px; margin-bottom: 20px; text-align: center; font-family: "MarkOffcProBold"; font-size: 14px; color: #666; background: #f9f9f9; }
 
-.share { padding: 31px; background: #fff; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17); }
-.share.disabled { background: transparent; border: 1px solid #e1e1e1; pointer-events: none; box-shadow: none; }
+.share { max-width: 340px; padding: 31px; background: #fff; border: 1px solid #e1e1e1; }
+@media only screen and (max-width: 600px) { .share { padding: 15px; } }
+.promo .share { box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17); }
+.share.disabled { background: transparent; pointer-events: none; box-shadow: none; }
 .share.disabled .btn { background: #e8e8e8; opacity: 0.6; }
-.share .btn { margin-bottom: 15px; }
+.share .btn { margin-top: 15px; }
+.share .btn:first-child { margin-top: 0; }
+
+@media only screen and (max-width: 900px) { .dashboard { display: -webkit-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; } }
+.dashboard .dashboard__topper { padding: 25px 0; background: #f2f2f2; }
+@media only screen and (max-width: 900px) { .dashboard .dashboard__topper { -webkit-order: 2; order: 2; } }
+.dashboard .dashboard__in { padding-top: 55px; }
+.dashboard .dashboard__in .share { float: right; margin-left: 30px; }
+.dashboard .dashboard__in .dashboard__table { overflow: hidden; }
+@media only screen and (max-width: 900px) { .dashboard .dashboard__in { -webkit-order: 1; order: 1; padding-top: 0; }
+  .dashboard .dashboard__in .share { float: none; margin: 0 auto 25px; }
+  .dashboard .dashboard__in .dashboard__table { overflow: visible; width: 100%; }
+  .dashboard .dashboard__in .dashboard__table .h3 { text-align: center; } }
+
+.stats { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.stats:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.stats .stats__item { display: inline-block; line-height: normal; vertical-align: top; font-size: 14px; }
+@media only screen and (max-width: 900px) { .stats .stats__item { width: 50%; margin-bottom: 20px; padding-left: 50px; } }
+@media only screen and (max-width: 600px) { .stats .stats__item { width: 100%; } }
+.stats .stats__item .icon-shares, .stats .stats__item .icon-man { font-size: 38px; color: #4e3bbc; margin-right: 20px; }
+.stats .stats__item .icon-money { font-size: 50px; color: #4e3bbc; margin-right: 20px; }
+.stats .stats__item .icon-hand { font-size: 46px; color: #4e3bbc; margin-right: 20px; }
+.stats .stats__item .stats__text { display: inline-block; vertical-align: middle; margin-right: 20px; font-size: 16px; font-family: "MarkOffcProBook"; color: #666; }
+.stats .stats__item .stats__counter { display: inline-block; vertical-align: middle; font-size: 28px; font-family: "MarkOffcProLight"; color: #666; }
+
+.shares .shares__item { *zoom: 1; padding: 16px 10px 18px; border-top: 1px solid #f0f0f0; }
+.shares .shares__item:after { content: " "; display: table; clear: both; }
+.shares .shares__item:first-child { border-width: 2px; }
+.shares .shares__left { float: left; *zoom: 1; }
+.shares .shares__left:after { content: " "; display: table; clear: both; }
+.shares .shares__right { float: right; width: 100px; }
+.shares .shared__info { float: left; width: 365px; }
+@media only screen and (max-width: 480px) { .shares .shared__info { width: 100%; } }
+.shares .shared__info a { font-family: "MarkOffcProBold"; font-size: 16px; color: #666; }
+.shares .shared__info p { font-size: 14px; color: #b3b3b3; font-family: "MarkOffcProBook"; }
+@media only screen and (max-width: 900px) { .shares .shared__info p { padding-top: 10px; } }
+.shares .shared__status { float: left; padding-top: 20px; font-size: 14px; color: #b3b3b3; font-family: "MarkOffcProMedium"; }
+@media only screen and (max-width: 900px) { .shares .shared__status { padding-top: 0; } }

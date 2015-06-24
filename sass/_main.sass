@@ -29,6 +29,34 @@
 		padding: 30px 5px 
 		&:before
 			opacity: 0.1 	
+	&.promo_dashboard
+		min-height: 300px
+		&:before
+			background: #76a9be url(../img/img2.png) 5% 35% no-repeat
+		.promo__right
+			margin-bottom: 0
+			.h1, .promo__text
+				color: #fff			
+		+r(1100)
+			padding: 300px 0 0
+			&:before
+				opacity: 1
+				background: #76a9be url(../img/img2.png) 52% 35% no-repeat 
+			.promo__right
+				padding: 20px 0 
+				background: #FFF
+				.h1, .promo__text
+					color: #666
+				.promo__text
+					margin-bottom: 0
+		+r(480)
+			min-height: 1px
+			padding: 140px 0 0 
+			&:before
+				background: #76a9be url(../img/img2.png) 50% -70px no-repeat
+				-webkit-background-size: 80% auto 
+				-o-background-size: 80% auto 
+				background-size: 80% auto 					 	
 	.promo__right
 		float: right
 		width: 50%
@@ -64,16 +92,124 @@
 		background: #f9f9f9  
   					
 .share
+	max-width: 340px 
 	padding: 31px 
 	background: #fff
-	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17) 
+	border: 1px solid #e1e1e1
+	+r(600)
+		padding: 15px 
+	.promo &
+		box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17) 
 	&.disabled
 		background: transparent 
-		border: 1px solid #e1e1e1
 		pointer-events: none
 		box-shadow: none
 		.btn
 			background: #e8e8e8
 			opacity: 0.6 
 	.btn
-		margin-bottom: 15px		
+		margin-top: 15px
+		&:first-child
+			margin-top: 0		
+.dashboard
+	+r(900)
+		display: -webkit-flex
+		display: flex
+		-webkit-flex-direction: column
+		flex-direction: column
+	.dashboard__topper
+		padding: 25px 0
+		background: #f2f2f2
+		+r(900)
+			-webkit-order: 2
+			order: 2
+	.dashboard__in
+		padding-top: 55px	
+		.share
+			float: right
+			margin-left: 30px
+		.dashboard__table
+			overflow: hidden
+		+r(900)
+			-webkit-order: 1
+			order: 1
+			padding-top: 0
+			.share
+				float: none
+				margin: 0 auto 25px
+			.dashboard__table
+				overflow: visible
+				width: 100% 
+				.h3
+					text-align: center
+.stats
+	+justify
+	.stats__item
+		+justify-child
+		+r(900)
+			width: 50%
+			margin-bottom: 20px
+			padding-left: 50px 
+		+r(600)
+			width: 100% 	
+		.icon-shares, .icon-man
+			font-size: 38px
+			color: #4e3bbc
+			margin-right: 20px
+		.icon-money
+			font-size: 50px
+			color: #4e3bbc
+			margin-right: 20px
+		.icon-hand
+			font-size: 46px
+			color: #4e3bbc
+			margin-right: 20px		
+		.stats__text
+			display: inline-block
+			vertical-align: middle
+			margin-right: 20px
+			font-size: 16px
+			+offs-book
+			color: #666
+		.stats__counter
+			display: inline-block
+			vertical-align: middle
+			font-size: 28px
+			+offs-l
+			color: #666 			
+.shares
+	.shares__item
+		+clr
+		padding: 16px 10px 18px
+		border-top: 1px solid #f0f0f0
+		&:first-child
+			border-width: 2px 			
+	.shares__left
+		float: left
+		+clr
+	.shares__right
+		float: right
+		width: 100px 
+	.shared__info
+		float: left
+		width: 365px
+		+r(480)
+			width: 100% 
+		a
+			+offs-b
+			font-size: 16px
+			color: #666
+		p
+			font-size: 14px
+			color: #b3b3b3
+			+offs-book
+			+r(900)
+				padding-top: 10px 	
+	.shared__status
+		float: left
+		padding-top: 20px
+		font-size: 14px
+		color: #b3b3b3
+		+offs-m
+		+r(900)
+			padding-top: 0  				

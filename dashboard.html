@@ -9,6 +9,7 @@
 	<meta name="theme-color" content="#fff"> 
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/style.css" >
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -16,29 +17,90 @@
 <!-- out-->
 <div class="out">
 	<!-- promo -->
-	<div class="promo">
+	<div class="promo promo_dashboard">
 		<div class="center clr">
 			<div class="promo__right">
 				<h1 class="h1">Give $50, Get $50</h1>
 				<div class="promo__text">Get $50 for every new friend who orders. They'll also get $50 off their first order</div>
-				<div class="promo__in">
-					<div class="form">
-						<form>
-							<div class="form__row">
-								<input type="text" class="input" placeholder="Enter your email">
+			</div>
+		</div>
+	</div>
+	<!-- dashboard -->
+	<div class="dashboard">
+		<div class="dashboard__topper">
+			<div class="container">
+				<ul class="stats">
+					<li class="stats__item">
+						<span class="icon-shares"></span>
+						<span class="stats__text">Times<br>shared</span>
+						<span class="stats__counter">5</span>
+					</li>
+					<li class="stats__item">
+						<span class="icon-money"></span>
+						<span class="stats__text">Possible<br>rewards</span>
+						<span class="stats__counter">$250</span>
+					</li>
+					<li class="stats__item">
+						<span class="icon-man"></span>
+						<span class="stats__text">Friends<br>Referred</span>
+						<span class="stats__counter">0</span>
+					</li>
+					<li class="stats__item">
+						<span class="icon-hand"></span>
+						<span class="stats__text">Rewards<br>Earned</span>
+						<span class="stats__counter">$0</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="dashboard__in">
+			<div class="container clr">
+				<div class="share">
+					<button type="submit" class="btn btn_red"><span class="icon-mail"></span>Share via Email</button>
+					<button type="submit" class="btn btn_blue"><span class="icon-fb"></span>Share on Facebook</button>
+					<button type="submit" class="btn btn_lightblue"><span class="icon-tw"></span>Share on Twitter</button>
+					<button type="submit" class="btn"><span class="icon-link"></span>Copy & share Link</button>
+				</div>
+				<div class="dashboard__table">
+					<h3 class="h3">Keep track of your shares & rewards</h3>
+					<ul class="shares">
+						<li class="shares__item">
+							<div class="shares__left">
+								<div class="shared__info">
+									<a href="mailto:friend@gmail.com">friend@gmail.com</a>
+									<p>Email Sent Nov 05, 2014</p>
+								</div>
+								<div class="shared__status">Sent, unopened</div>
 							</div>
-
-							<div class="form__row">
-								<button type="submit" class="btn">Spread the Word</button>
+							<div class="shares__right">
+								<button class="button">Resend</button>
 							</div>
-						</form>
-					</div>		
-					<div class="share disabled">
-						<button type="submit" class="btn btn_red">Share via Email</button>
-						<button type="submit" class="btn btn_blue">Share on Facebook</button>
-						<button type="submit" class="btn btn_lightblue">Share on Twitter</button>
-						<button type="submit" class="btn">Copy & share Link</button>
-					</div>
+						</li>
+						<li class="shares__item">
+							<div class="shares__left">
+								<div class="shared__info">
+									<a href="mailto:friend@gmail.com">friend+visited-clicked@gmail.com</a>
+									<p>Email Sent Nov 05, 2014</p>
+								</div>
+								<div class="shared__status">Sent, clicked</div>
+							</div>
+							<div class="shares__right">
+								<button class="button">Resend</button>
+							</div>
+						</li>
+						<li class="shares__item">
+							<div class="shares__left">
+								<div class="shared__info">
+									<a href="mailto:friend@gmail.com">friend+no-expiration@gmail.com</a>
+									<p>Email Sent Nov 05, 2014</p>
+								</div>
+								<div class="shared__status">Sent, unopened</div>
+							</div>
+							<div class="shares__right">
+								<button class="button">Resend</button>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
