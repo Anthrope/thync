@@ -40,8 +40,10 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 @media only screen and (max-width: 600px) { .h1 { font-size: 48px; } }
 @media only screen and (max-width: 480px) { .h1 { font-size: 32px; } }
 
-.h3 { margin-bottom: 20px; font-family: "MarkOffcProLight"; text-transform: uppercase; font-size: 28px; font-weight: normal; color: #212121; }
-@media only screen and (max-width: 600px) { .h3 { font-size: 26px; } }
+.h2, .h3 { margin-bottom: 20px; font-family: "MarkOffcProLight"; text-transform: uppercase; font-size: 40px; font-weight: normal; color: #212121; }
+@media only screen and (max-width: 600px) { .h2, .h3 { font-size: 26px; } }
+
+.h3 { font-size: 28px; }
 
 .clr { *zoom: 1; }
 .clr:after { content: " "; display: table; clear: both; }
@@ -159,3 +161,10 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 @media only screen and (max-width: 900px) { .shares .shared__info p { padding-top: 10px; } }
 .shares .shared__status { float: left; padding-top: 20px; font-size: 14px; color: #b3b3b3; font-family: "MarkOffcProMedium"; }
 @media only screen and (max-width: 900px) { .shares .shared__status { padding-top: 0; } }
+
+.overlay { position: fixed; top: 0; bottom: 0; right: 0; left: 0; overflow-y: auto; text-align: center; font-size: 0; }
+.overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+
+.popup { position: relative; display: inline-block; vertical-align: middle; max-width: 900px; padding: 30px; background: #fff; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17); }
+.popup .popup__in { font-size: 16px; color: #212121; text-align: left; }
+.popup .popup__in article p, .popup .popup__in article ul { margin-bottom: 25px; }
