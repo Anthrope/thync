@@ -223,19 +223,34 @@
 	left: 0
 	overflow-y: auto
 	+vertical
+	& > i
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background: rgba(#fff, 0.9) 
 .popup
 	position: relative
 	display: inline-block
 	vertical-align: middle
 	max-width: 900px
-	margin: 1% 
-	
+	margin: 1%
 	background: #fff
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17)
 	&.popup_small
 		width: 640px
-		+r(650)
-			width: 98%	
+	+r(650)
+		&.popup_small
+			width: 98%
+	+r(480)
+		&.popup_small
+			margin: 2%
+			width: 96%
+	+r(320)
+		&.popup_small
+			margin: 3%
+			width: 94%		  			
 	.popup__close
 		position: absolute
 		top: 11px
@@ -243,7 +258,31 @@
 		background: transparent
 		span
 			font-size: 30px
-			color: #b2b2b2 
+			color: #212121 
+			opacity: 0.5 
+	.popup__topper
+		padding: 50px 40px 50px 200px
+		background: #eac6ae url(../img/img3.png) -50px 50% no-repeat
+		.h1
+			font-size: 44px
+			color: #6a3d20
+		p
+			color: #6a3d20
+			font-size: 18px
+			+comp-l 
+		+r(640)
+			padding: 140px 0 0
+			text-align: center
+			background-position: 50% 50% 
+			.popup_-topperIn
+				padding: 20px 10px 0 
+				background: #fff
+				.h1
+					font-size: 32px
+					color: #666
+					margin-bottom: 10px
+				p
+					color: #666	  			
 	.popup__in
 		padding: 30px 
 		font-size: 16px
@@ -259,7 +298,13 @@
 			padding: 0
 			margin-bottom: 0
 			.input
-				text-align: left		
+				text-align: left
+		.share
+			border: none
+			padding: 0 31px 
+			margin: 0 auto
+			+r(480) 	
+				padding: 0 			
 .personal-link
 	& > span
 		display: inline-block

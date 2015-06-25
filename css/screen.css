@@ -180,17 +180,29 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 
 .overlay { position: fixed; top: 0; bottom: 0; right: 0; left: 0; overflow-y: auto; text-align: center; font-size: 0; }
 .overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.overlay > i { position: absolute; top: 0; bottom: 0; right: 0; left: 0; background: rgba(255, 255, 255, 0.9); }
 
 .popup { position: relative; display: inline-block; vertical-align: middle; max-width: 900px; margin: 1%; background: #fff; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17); }
 .popup.popup_small { width: 640px; }
 @media only screen and (max-width: 650px) { .popup.popup_small { width: 98%; } }
+@media only screen and (max-width: 480px) { .popup.popup_small { margin: 2%; width: 96%; } }
+@media only screen and (max-width: 320px) { .popup.popup_small { margin: 3%; width: 94%; } }
 .popup .popup__close { position: absolute; top: 11px; right: 11px; background: transparent; }
-.popup .popup__close span { font-size: 30px; color: #b2b2b2; }
+.popup .popup__close span { font-size: 30px; color: #212121; opacity: 0.5; }
+.popup .popup__topper { padding: 50px 40px 50px 200px; background: #eac6ae url(../img/img3.png) -50px 50% no-repeat; }
+.popup .popup__topper .h1 { font-size: 44px; color: #6a3d20; }
+.popup .popup__topper p { color: #6a3d20; font-size: 18px; font-family: "MarkCompPro-Light"; }
+@media only screen and (max-width: 640px) { .popup .popup__topper { padding: 140px 0 0; text-align: center; background-position: 50% 50%; }
+  .popup .popup__topper .popup_-topperIn { padding: 20px 10px 0; background: #fff; }
+  .popup .popup__topper .popup_-topperIn .h1 { font-size: 32px; color: #666; margin-bottom: 10px; }
+  .popup .popup__topper .popup_-topperIn p { color: #666; } }
 .popup .popup__in { padding: 30px; font-size: 16px; color: #212121; text-align: left; }
 @media only screen and (max-width: 480px) { .popup .popup__in { padding: 15px; } }
 .popup .popup__in article p, .popup .popup__in article ul, .popup .popup__in article ol { margin-bottom: 25px; }
 .popup .popup__in .form { box-shadow: none; padding: 0; margin-bottom: 0; }
 .popup .popup__in .form .input { text-align: left; }
+.popup .popup__in .share { border: none; padding: 0 31px; margin: 0 auto; }
+@media only screen and (max-width: 480px) { .popup .popup__in .share { padding: 0; } }
 
 .personal-link > span { display: inline-block; margin-bottom: 3px; font-family: "MarkOffcProMedium"; font-size: 16px; color: #212121; }
 .personal-link .personal-link__in { *zoom: 1; }
