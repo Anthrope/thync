@@ -204,7 +204,7 @@
 			color: #b3b3b3
 			+offs-book
 			+r(900)
-				padding-top: 10px 	
+				padding-top: 10px
 	.shared__status
 		float: left
 		padding-top: 20px
@@ -228,14 +228,82 @@
 	display: inline-block
 	vertical-align: middle
 	max-width: 900px
+	margin: 1% 
 	padding: 30px 
 	background: #fff
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17)
+	&.popup_small
+		width: 640px
+		+r(650)
+			width: 98%
+	+r(480)
+		padding: 15px 	
+	.popup__close
+		position: absolute
+		top: 11px
+		right: 11px
+		background: transparent
+		span
+			font-size: 30px
+			color: #b2b2b2 
 	.popup__in
 		font-size: 16px
 		color: #212121
 		text-align: left
 		article
-			p, ul
-				margin-bottom: 25px 
-					  				
+			p, ul, ol
+				margin-bottom: 25px
+		.form
+			box-shadow: none
+			padding: 0
+			margin-bottom: 0
+			.input
+				text-align: left		
+.personal-link
+	& > span
+		display: inline-block
+		margin-bottom: 3px 
+		+offs-m
+		font-size: 16px
+		color: #212121	 
+	.personal-link__in				 
+		+clr
+		+r(480)
+			display: -webkit-flex
+			display: flex
+			-webkit-flex-direction: column
+			flex-direction: column
+	.personal-link__right
+		float: right
+		width: 105px
+		margin-left: 11px 
+		.btn
+			height: 40px
+			font-size: 16px
+		+r(480)
+			-webkit-order: 2
+			order: 2
+			float: none
+			width: 100%
+			margin-left: 0
+			margin-bottom: 10px  	
+	.personal-link__left
+		overflow: hidden
+		+r(480)
+			overflow: visible
+			-webkit-order: 1
+			order: 1
+		& > p
+			font-size: 14px
+	.personal-link__link
+		width: 100% 
+		margin-bottom: 15px
+		height: 40px
+		line-height: 40px
+		padding: 0 12px 
+		background: #f6f5f8
+		overflow: hidden
+		word-break: break-all
+		+offs-m
+		color: #666
+	 				  				
