@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>invite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/style.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- popup-->
+<div class="overlay">
+	<i></i>
+	<div class="popup popup_small">
+		<button class="popup__close"><span class="icon-close"></span></button>
+		<nav class="breadcrumbs">
+			<a href="#" class="back">Back</a>
+		</nav>
+		<div class="popup__in">
+			<h2 class="h2">share via email</h2>
+			<div class="form">
+				<div class="form__title">From: affiliate@example.com</div>
+				<form action="#">
+					<label class="form__row">
+						<span>To:</span>
+						<input type="text" class="input" placeholder="Enter your friend's emails separated by commas">
+					</label>
+					<label class="form__row">
+						<span>Subject:</span>
+						<input type="text" class="input" placeholder="A gift: $50 off goop shop">
+					</label>
+					<label class="form__row">
+						<span>Note:</span>
+						<textarea class="textarea" placeholder="Offer link will be inserted automatically."></textarea>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox">
+						<span>Send my friends a reminder e-mail in 3 days</span>
+					</label>
+					<div class="form__row">
+						<button type="submit" class="btn btn_short">Send Email <span class="icon-right"></span></button>
+					</div>
+				</form>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
