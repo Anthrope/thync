@@ -50,6 +50,8 @@ body
 	+offs
 	font-size: 12px 
 	line-height: 1.2
+	&.no-scroll
+		overflow: hidden
 
 // titles
 .h1
@@ -121,6 +123,8 @@ body
 	&:focus
 		+placeholder
 			font-size: 0
+.input_white
+	background: #fff 
 .textarea
 	padding: 5px 10px 
 	text-align: left
@@ -159,16 +163,26 @@ body
 			left: 5px	
 			font-family: 'icomoon'
 			font-size: 12px
-			color: #666 		  	
+			color: #666
+	&.checkbox_white
+		span
+			&:before
+				background: #fff 		 		  	
 .btn
 	height: 50px
 	width: 100%
 	background: #4e3bbc
 	text-align: center
-	font-size: 20px
 	color: #fff
+	line-height: 0
+	font-size: 0 
 	+offs-b
 	+tr(background 300ms)
+	span
+		display: inline-block
+		vertical-align: middle
+		font-size: 20px 
+		line-height: 1
 	&:hover
 		background: darken(#4e3bbc, 5%) 
 	&.btn_red
@@ -193,10 +207,12 @@ body
 		margin-left: 10px
 	.icon-mail, .icon-fb, .icon-tw
 		font-size: 28px
-		margin-right: 10px  	
+		margin-right: 10px
+		line-height: 1	
 	.icon-link
 		font-size: 14px
 		margin-right: 10px
+		line-height: 1
 .button
 	height: 40px
 	width: 100%

@@ -36,6 +36,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 @font-face { font-family: MarkCompPro-Light; src: url("fonts/MarkCompPro-Light.eot"); src: url("fonts/MarkCompPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/MarkCompPro-Light.woff2") format("woff2"), url("fonts/MarkCompPro-Light.woff") format("woff"), url("fonts/MarkCompPro-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: MarkCompPro-ExtraLight; src: url("fonts/MarkCompPro-ExtraLight.eot"); src: url("fonts/MarkCompPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/MarkCompPro-ExtraLight.woff2") format("woff2"), url("fonts/MarkCompPro-ExtraLight.woff") format("woff"), url("fonts/MarkCompPro-ExtraLight.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
+body.no-scroll { overflow: hidden; }
 
 .h1 { font-family: "MarkCompPro-ExtraLight"; font-size: 60px; color: #666; font-weight: normal; }
 @media only screen and (max-width: 600px) { .h1 { font-size: 48px; } }
@@ -72,6 +73,8 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 .input:focus::-webkit-input-placeholder, .textarea:focus::-webkit-input-placeholder { font-size: 0; }
 .input:focus::placeholder, .textarea:focus::placeholder { font-size: 0; }
 
+.input_white { background: #fff; }
+
 .textarea { padding: 5px 10px; text-align: left; border: none; height: 80px; resize: none; }
 
 .checkbox { position: relative; display: inline-block; margin-top: 15px; font-size: 0; }
@@ -79,8 +82,10 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 .checkbox span { position: relative; display: inline-block; padding-left: 35px; font-size: 16px; color: #444; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; }
 .checkbox span:before { content: ""; position: absolute; top: -3px; left: 0; width: 25px; height: 25px; background: #f6f5f8; }
 .checkbox input[type="checkbox"]:checked + span:after { content: ""; position: absolute; top: 2px; left: 5px; font-family: "icomoon"; font-size: 12px; color: #666; }
+.checkbox.checkbox_white span:before { background: #fff; }
 
-.btn { height: 50px; width: 100%; background: #4e3bbc; text-align: center; font-size: 20px; color: #fff; font-family: "MarkOffcProBold"; -moz-transition: background 300ms; -o-transition: background 300ms; -webkit-transition: background 300ms; transition: background 300ms; }
+.btn { height: 50px; width: 100%; background: #4e3bbc; text-align: center; color: #fff; line-height: 0; font-size: 0; font-family: "MarkOffcProBold"; -moz-transition: background 300ms; -o-transition: background 300ms; -webkit-transition: background 300ms; transition: background 300ms; }
+.btn span { display: inline-block; vertical-align: middle; font-size: 20px; line-height: 1; }
 .btn:hover { background: #4635a9; }
 .btn.btn_red { background: #f55600; }
 .btn.btn_red:hover { background: #dc4d00; }
@@ -90,8 +95,8 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 .btn.btn_lightblue:hover { background: #399fee; }
 .btn.btn_short { width: 200px; text-transform: uppercase; }
 .btn .icon-right { position: relative; top: -2px; font-size: 13px; margin-left: 10px; }
-.btn .icon-mail, .btn .icon-fb, .btn .icon-tw { font-size: 28px; margin-right: 10px; }
-.btn .icon-link { font-size: 14px; margin-right: 10px; }
+.btn .icon-mail, .btn .icon-fb, .btn .icon-tw { font-size: 28px; margin-right: 10px; line-height: 1; }
+.btn .icon-link { font-size: 14px; margin-right: 10px; line-height: 1; }
 
 .button { height: 40px; width: 100%; line-height: 40px; text-align: center; background: #d8d8d8; font-family: "MarkOffcProBold"; font-size: 16px; color: #666; -moz-transition: background 300ms; -o-transition: background 300ms; -webkit-transition: background 300ms; transition: background 300ms; }
 .button:hover { background: #cbcbcb; }
@@ -220,3 +225,23 @@ body { font-family: "MarkOffcPro"; font-size: 12px; line-height: 1.2; }
 
 .back { position: relative; display: inline-block; padding-left: 20px; font-size: 16px; color: #666; font-family: "MarkOffcPro"; }
 .back:before { content: ""; position: absolute; top: 2px; left: 0; margin-right: 10px; font-family: "icomoon"; font-size: 12px; color: #999; }
+
+.claim { *zoom: 1; padding: 100px 0; background: #f5f4f4; background-repeat: no-repeat; background-position: -200px 100%; }
+.claim:after { content: " "; display: table; clear: both; }
+.claim.claim_brown { background: #e6c2aa; background-repeat: no-repeat; background-position: -100px 100%; }
+.claim.claim_brown .claim__in .h2 { color: #6a3d20; }
+.claim.claim_brown .claim__in > p { color: #6a3d20; }
+.claim p { color: #666; font-size: 18px; font-family: "MarkCompPro-Light"; }
+@media only screen and (max-width: 640px) { .claim { padding: 240px 0 0; text-align: center; background-position: 50% 0; -webkit-background-size: 80% auto; -o-background-size: 80% auto; background-size: 80% auto; }
+  .claim.claim_brown { background-position: 50% 0; -webkit-background-size: 80% auto; -o-background-size: 80% auto; background-size: 80% auto; } }
+@media only screen and (max-width: 480px) { .claim { padding: 140px 0 0; }
+  .claim.claim_brown { background-position: 50% -40px; } }
+.claim .claim__in { float: right; margin-right: 13%; width: 280px; }
+.claim .claim__in .h2 { margin: 0 -20px 20px; font-family: "MarkCompPro-ExtraLight"; font-size: 38px; text-transform: none; color: #666; }
+.claim .claim__in .form { max-width: 280px; margin: 0 auto; padding: 31px 0; background: transparent; box-shadow: none; text-align: left; }
+@media only screen and (max-width: 640px) { .claim .claim__in { width: 100%; padding-top: 10px; background: #fff; margin-right: 0; }
+  .claim .claim__in .h2 { max-width: 280px; margin: 0 auto 20px; }
+  .claim .claim__in .form .input { background: #f6f5f8; }
+  .claim .claim__in .form .checkbox span:before { background: #f6f5f8; } }
+.claim .claim__code { padding: 20px 0 15px; background: #fff; text-align: center; font-size: 16px; color: #666; }
+.claim .claim__code p { padding-top: 2px; color: #666; text-transform: uppercase; font-family: "MarkOffcProMedium"; }

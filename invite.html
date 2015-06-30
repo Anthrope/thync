@@ -35,10 +35,10 @@
 						</form>
 					</div>		
 					<div class="share disabled">
-						<button type="submit" class="btn btn_red"><span class="icon-mail"></span>Share via Email</button>
-						<button type="submit" class="btn btn_blue"><span class="icon-fb"></span>Share on Facebook</button>
-						<button type="submit" class="btn btn_lightblue"><span class="icon-tw"></span>Share on Twitter</button>
-						<button type="submit" class="btn"><span class="icon-link"></span>Copy & share Link</button>
+						<button type="button" class="btn btn_red"><span class="icon-mail"></span><span>Share via Email</span></button>
+						<button type="button" class="btn btn_blue"><span class="icon-fb"></span><span>Share on Facebook</span></button>
+						<button type="button" class="btn btn_lightblue"><span class="icon-tw"></span><span>Share on Twitter</span></button>
+						<button type="button" class="btn"><span class="icon-link"></span><span>Copy & share Link</span></button>
 					</div>
 				</div>
 			</div>
@@ -48,9 +48,28 @@
 <!-- footer -->
 <footer class="footer">
 	<div class="footer__in">
-		<a href="#">Terms & Conditions</a>
+		<a href="#" class="js-popup" data-popup="terms">Terms & Conditions</a>
 	</div>
 </footer>
+<!-- popup-->
+<div id="terms" class="overlay" style="display: none;">
+	<i></i>
+	<div class="popup">
+		<button class="popup__close js-popup-close"><span class="icon-close"></span></button>
+		<div class="popup__in">
+			<h3 class="h3">Terms & Conditions</h3>
+			<article>
+				<p>By accessing this web site, you agree to be bound by the terms and conditions of use appearing below, such use being non-commercial in nature and conditioned on your acceptance. The materials on this web site are Copyright © 2013 Creative Genius, Inc., dba . All rights reserved. You are hereby authorized to view, copy, print, and distribute these materials subject to the following conditions:</p>
+				<ol class="count-list">
+					<li>the materials may be used for internal informational purposes only;</li>
+					<li>any copy of these materials or any portion thereof must include the above copyright notice; and</li>
+					<li>Pura Vida Bracelets may revoke or modify any of the foregoing rights at any time.</li>
+				</ol>
+				<p>You also expressly agree that you will not use any robot, spider, or other automatic or manual device or process to interfere or attempt to interfere with the proper working of our web site, nor act as a conduit for others to effect the same result.</p>
+			</article>
+		</div>
+	</div>
+</div>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

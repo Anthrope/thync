@@ -1,19 +1,23 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	// modals init
 
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
+	$('.js-popup').on('click', function(){
+		var popupId = $(this).data('popup');
 
-	console.log($('body').html());
+		$('#' + popupId).show();
+		$('body').addClass('no-scroll');
+
+		return false;
+	});
+
+	$('.js-popup-close').on('click', function() {
+		$(this).parents('.overlay').hide();
+		$('body').removeClass('no-scroll');
+	});
+	$('.overlay i').on('click', function() {
+		$(this).parents('.overlay').hide();
+		$('body').removeClass('no-scroll');
+	});
+
 });
