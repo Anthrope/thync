@@ -246,3 +246,8 @@ body.no-scroll { overflow: hidden; }
   .claim .claim__in .form .checkbox span:before { background: #f6f5f8; } }
 .claim .claim__code { padding: 20px 0 15px; background: #fff; text-align: center; font-size: 16px; color: #666; }
 .claim .claim__code p { padding-top: 2px; color: #666; text-transform: uppercase; font-family: "MarkOffcProMedium"; }
+
+.validation { text-align: center; padding: 15px 15px 0; font-size: 16px; }
+.validation.error { color: red; }
+.validation.success { color: #1BB01B; }
+.validation.loading { color: #C3BA16; }
