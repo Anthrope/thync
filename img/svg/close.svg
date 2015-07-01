@@ -1,34 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns:ev="http://www.w3.org/2001/xml-events"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-290.5 381.5 31 31"
-	 enable-background="new -290.5 381.5 31 31" xml:space="preserve">
-<filter  id="Filter_1">
-	<feFlood  result="floodOut" flood-opacity="1" flood-color="rgb( 0, 0, 0 )"></feFlood>
-	<feComposite  operator="atop" in="floodOut" result="compOut" in2="SourceGraphic"></feComposite>
-	<feBlend  in="compOut" in2="SourceGraphic" mode="normal"></feBlend>
-</filter>
-<filter  id="Filter_0">
-	<feFlood  result="floodOut" flood-opacity="1" flood-color="rgb( 0, 0, 0 )"></feFlood>
-	<feComposite  operator="atop" in="floodOut" result="compOut" in2="SourceGraphic"></feComposite>
-	<feBlend  in="compOut" in2="SourceGraphic" mode="normal"></feBlend>
-</filter>
-<g opacity="0.502" enable-background="new    ">
-	<path fill="#FFFFFF" d="M-275,412.5c-8.5,0-15.5-7-15.5-15.5s7-15.5,15.5-15.5s15.5,7,15.5,15.5S-266.5,412.5-275,412.5z
-		 M-275,382.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5s14.5-6.5,14.5-14.5S-267,382.5-275,382.5z"/>
-</g>
-<g filter="url(#Filter_0)">
-	<path fill="none" stroke="#FFFFFF" stroke-width="2" d="M-280.2,391.8l10.4,10.4"/>
-</g>
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="6.1 5.2 50 50"
+	 enable-background="new 6.1 5.2 50 50" xml:space="preserve">
 <g>
-	
-		<rect x="-282.4" y="396" transform="matrix(0.7071 0.7071 -0.7071 0.7071 200.1758 310.733)" fill="#FFFFFF" width="14.8" height="2"/>
-</g>
-<g filter="url(#Filter_1)">
-	<path fill="none" stroke="#FFFFFF" stroke-width="2" d="M-269.8,391.8l-10.4,10.4"/>
-</g>
-<g>
-	
-		<rect x="-276" y="389.6" transform="matrix(0.7071 0.7071 -0.7071 0.7071 200.1758 310.733)" fill="#FFFFFF" width="2" height="14.8"/>
+	<path fill="#FFFFFF" d="M31.1,5.2c-13.7,0-25,11.3-25,25c0,13.7,11.3,25,25,25s25-11.3,25-25C56.1,16.5,44.8,5.2,31.1,5.2z
+		 M31.1,53.6c-12.9,0-23.4-10.5-23.4-23.4c0-12.9,10.5-23.4,23.4-23.4c12.9,0,23.4,10.5,23.4,23.4C54.5,43.1,44,53.6,31.1,53.6z"/>
+	<polygon fill="#FFFFFF" points="38.4,20.6 31.1,27.9 23.8,20.6 21.5,22.9 28.8,30.2 21.5,37.5 23.8,39.8 31.1,32.5 38.4,39.8 
+		40.7,37.5 33.4,30.2 40.7,22.9 	"/>
 </g>
 </svg>

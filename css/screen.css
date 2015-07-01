@@ -84,7 +84,7 @@ body.no-scroll { overflow: hidden; }
 .checkbox input[type="checkbox"]:checked + span:after { content: ""; position: absolute; top: 2px; left: 5px; font-family: "icomoon"; font-size: 12px; color: #666; }
 .checkbox.checkbox_white span:before { background: #fff; }
 
-.btn { height: 50px; width: 100%; background: #4e3bbc; text-align: center; color: #fff; line-height: 0; font-size: 0; font-family: "MarkOffcProBold"; -moz-transition: background 300ms; -o-transition: background 300ms; -webkit-transition: background 300ms; transition: background 300ms; }
+.btn { height: 50px; width: 100%; background: #4e3bbc; text-align: center; color: #fff; line-height: 0; font-size: 0; font-family: "MarkOffcProBold"; -moz-transition: background 300ms; -o-transition: background 300ms; -webkit-transition: background 300ms; transition: background 300ms; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 .btn span { position: relative; display: inline-block; vertical-align: middle; font-size: 20px; line-height: 1; }
 .ie .btn span { top: 2px; }
 .btn:hover { background: #4635a9; }
@@ -194,7 +194,7 @@ body.no-scroll { overflow: hidden; }
 @media only screen and (max-width: 480px) { .popup.popup_small { margin: 2%; width: 96%; } }
 @media only screen and (max-width: 320px) { .popup.popup_small { margin: 3%; width: 94%; } }
 .popup .popup__close { position: absolute; top: 11px; right: 11px; background: transparent; }
-.popup .popup__close span { font-size: 30px; color: #212121; opacity: 0.5; }
+.popup .popup__close span { font-size: 30px; color: #212121; opacity: 0.5; padding-left: 1px; }
 .popup .popup__topper { padding: 50px 40px 50px 200px; background: #eac6ae url(../img/img3.png) -50px 50% no-repeat; }
 .popup .popup__topper .h1 { font-size: 44px; color: #6a3d20; }
 .popup .popup__topper p { color: #6a3d20; font-size: 18px; font-family: "MarkCompPro-Light"; }
