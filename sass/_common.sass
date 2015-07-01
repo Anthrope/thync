@@ -179,10 +179,14 @@ body
 	+offs-b
 	+tr(background 300ms)
 	span
+		position: relative
 		display: inline-block
 		vertical-align: middle
 		font-size: 20px 
 		line-height: 1
+	.ie &
+		span
+			top: 2px	
 	&:hover
 		background: darken(#4e3bbc, 5%) 
 	&.btn_red

@@ -85,7 +85,8 @@ body.no-scroll { overflow: hidden; }
 .checkbox.checkbox_white span:before { background: #fff; }
 
 .btn { height: 50px; width: 100%; background: #4e3bbc; text-align: center; color: #fff; line-height: 0; font-size: 0; font-family: "MarkOffcProBold"; -moz-transition: background 300ms; -o-transition: background 300ms; -webkit-transition: background 300ms; transition: background 300ms; }
-.btn span { display: inline-block; vertical-align: middle; font-size: 20px; line-height: 1; }
+.btn span { position: relative; display: inline-block; vertical-align: middle; font-size: 20px; line-height: 1; }
+.ie .btn span { top: 2px; }
 .btn:hover { background: #4635a9; }
 .btn.btn_red { background: #f55600; }
 .btn.btn_red:hover { background: #dc4d00; }
